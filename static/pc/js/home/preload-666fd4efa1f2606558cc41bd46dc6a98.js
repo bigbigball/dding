@@ -1,0 +1,1 @@
+define(["jquery"],function(e){return function(e,t){var n=new Image,r=e.data("src");n.src=r;if(n.width&&n.height){t({$el:e,width:n.width,height:n.height,src:r}),n=null;return}n.onload=function(){t({$el:e,width:n.width,height:n.height,src:r}),n=null}}});
