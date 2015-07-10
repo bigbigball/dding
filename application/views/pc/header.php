@@ -50,6 +50,9 @@
 				<li id="h_solutions" <?php if($haction == 'inside'){?>class="active"<?php }?> >
 					<a href="<?php echo base_url()?>index.php/pc/inside">丁盯inside</a>
 				</li>
+				<li id="h_dding" <?php if($haction == 'dynamic'){?>class="active"<?php }?> >
+					<a href="<?php echo base_url()?>index.php/pc/dynamic">丁盯进行时</a>
+				</li>
 				<li id="download">
 					<a>APP下载</a>
 				</li>

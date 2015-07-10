@@ -181,7 +181,7 @@
 			<div class="list">
 				<span>关于丁盯</span>
 				<ul>
-					<li><a style="cursor: default;">丁盯团队</a></li>
+					<li><a href="<?php echo base_url()?>index.php/pc/team">丁盯团队</a></li>
 					<li><a href="<?php echo base_url()?>index.php/pc/media">媒体报道</a></li>
 					<li><a href="<?php echo base_url()?>index.php/pc/joinus">加入我们</a></li>
 				</ul>

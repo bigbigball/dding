@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // font();
 	//首页产品展示hover
 	// 用CSS3实现hover时的放大效果
 	
@@ -16,15 +15,22 @@ $(document).ready(function () {
 		$(".downloadContent").hide();
 		$("#download").removeClass("active");
 	});
-
+/*
 	//产品链接
 	$("#product3").on("click",function() {
-		window.location="http://yundinghometest.dding.net/index.php/pc/lock";
+    // window.location="newproduct.html";
+		window.location="passwordlock.html";
 	});
 
 	$("#product2").on("click",function() {
-		window.location="http://yundinghometest.dding.net/index.php/pc/magnetic";
+		window.location="magnetic.html";
 	});
+
+  $("#h_doorClock").on("click",function(e){
+    window.location="passwordlock.html";
+    e.preventDefault();
+  });
+*/
 
 	$('.probar').on("click",function(e){
 		var $target = $(e.target);
@@ -76,21 +82,18 @@ $(document).ready(function () {
 	//隐藏登陆／注册
 	// $(".loginbar").hide();
 	//首页先定位到门磁
-	
 	/*
 	$(".logo img").on("click",function (e) {
 		window.location = "magnetic.html";
 		e.preventDefault();
 	});
-	*/
-	
 	$("#h_magnetic").on("click",function() {
 		window.location = "magnetic.html"
 	});
   $("#viewpoint").on("click",function() {
     window.location = "vp.html"
   });
-
+*/
 	//about qq weixin
 	$("#cd_qq").on("click",function(e){
 		var topP = (parseInt(e.pageY) - 290)+"px";
@@ -151,26 +154,22 @@ $(document).ready(function () {
   			$(this).addClass("active");
   		}
   	});
-
-  	/*
+/*
     //追问链接
     $('.aq').on("click",function(){
       window.location = "pc.html";
     });
-    */
-    /*
+
     //照片墙点击,个人观点页
     $(".photoWall li img").on("click",function(e){
         window.location = "mypc.html";
     });
-    */
-  	/*
+
     //点击用户观点进入观点详情页面
     $(".pro-point .info").on("click",function(){
        window.location = "pc.html";
     });
-    */
-    /*
+
     //点击用户头像或名字，进入个人观点页面
     $(".listview img").on("click",function(){
        window.location = "mypc.html";
@@ -180,7 +179,7 @@ $(document).ready(function () {
     $(".div_coin .name").on("click",function(){
        window.location = "mypc.html";
     });
-    */
+*/
   	// $('.bg2 section').each(function(index,item){
   	// 	var w_width = window.innerWidth;
   	// 	var new_height = Math.ceil(w_width * 622 / 1280);
@@ -274,7 +273,7 @@ $(document).ready(function () {
         $(this).find('#star').val(num);
         comscore += num * 0.5;
       });
-      circle.attr("data-content", comscore);
+      circle.attr("data", comscore);
       $(".circle-percent .score").text(comscore + "分");
       $(".circle #score").val(comscore);
       
@@ -310,7 +309,7 @@ $(document).ready(function () {
         $(this).find('.num').width(singlescore*40+"%");
         comscore += parseFloat(singlescore);
       });
-      circle.attr("data-content", comscore);
+      circle.attr("data", comscore);
       $(".circle-percent .score").text(comscore + "分");
       
       if (circle !== null) {
@@ -333,35 +332,16 @@ $(document).ready(function () {
       }
     });
     $(".photoWall li img").hover(function() {
-      $(this).parent().next('.photo_info').show().animate({
+      $(this).next('.photo_info').show().animate({
         "opacity": "0.8"
       }, 1000);
     }, function() {
-      $(this).parent().next('.photo_info').hide().animate({
+      $(this).next('.photo_info').hide().animate({
         "opacity": "0"
       }, 1000);
     });
 });
 
-function delcommet(url, id) {
-	if (confirm("确认删除")) {
-		$.ajax({
-			  type: 'POST',
-			  url: url,
-			  data: {id:id},
-			  dataType: 'json',
-			  success: function(data){
-				  if(data.errno == 0) {
-					  location.reload();
-				  } else {
-					  alert('删除失败');
-				  }
-			  }
-			});
-	} else {
-		return false;
-	}
-  }
   function replyOther(self){
     var $area_p = $($(self).parent().parent().find('.area_p'));
     if($area_p.css('display') == 'none')
@@ -419,6 +399,23 @@ function delcommet(url, id) {
     }
     return true;
   }
+
+  function toolbar(el) {
+      el = typeof el == 'string' ? document.getElementById(el) : el;
+      var elTop = el.offsetTop;
+      var sTop = 0;
+      window.onscroll = function () {
+          sTop = document.body.scrollTop || document.documentElement.scrollTop;
+          if (sTop > elTop){
+              el.style.top = "100px";
+              el.style.position = "fixed"
+          } else {
+              el.style.top = elTop + 'px';
+              el.style.position = "absolute"
+          }
+      }
+  }
+  toolbar('sidebarFollow');
 
 // window.onload = function() {
 // 	font();
