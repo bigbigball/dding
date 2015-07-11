@@ -27,7 +27,7 @@
 								    <?php echo $v['title']?>
 								  </a>
 								</p>
-								<a><img src="<?php echo 'http://yundinghomebackendtest.dding.net/uploads/dynamic/'.$v['thumb'] ?>"></a>
+								<a href="<?php echo base_url()?>index.php/pc/dynamic/dynamicDetail?id=<?php if(isset($v['id'])) echo $v['id'];?>"><img src="<?php echo 'http://yundinghomebackendtest.dding.net/uploads/dynamic/'.$v['thumb'] ?>"></a>
 							</div>
 						</li>
 					  <?php endforeach; ?>	

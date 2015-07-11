@@ -19,7 +19,7 @@
 					<span class="dy_date"><?php echo date('Y-m-d', $dynamic['ctime'])?></span>
 				</div>
 				<div class="dynamic_content">
-					<img src="<?php echo 'http://yundinghomebackendtest.dding.net/uploads/dynamic/'.$dynamic['thumb'] ?>" class="detail">
+					<img src="<?php echo 'http://yundinghomebackendtest.dding.net/uploads/dynamic/'.$dynamic['thumb'] ?>" class="detail" width="790px" height="170px">
 				</div>
 				<div class="dynamic_content">
 					<?php echo $dynamic['description']?>

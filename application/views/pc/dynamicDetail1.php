@@ -20,7 +20,7 @@
 				</div>
 				<div class="dynamic_content">
 					<div class="dy_vedio">
-						<embed src="http://player.youku.com/player.php/sid/XMzI2NTc4NTMy/v.swf" width="480" height="400" 
+						<embed src="<?php echo $dynamic['video']?>" width="480" height="400" 
 						type="application/x-shockwave-flash"></embed>
 						<!-- <video width="480" height="400" controls="controls">
 						  <source src="movie.mp4" type="video/mp4" />
@@ -33,8 +33,9 @@
 					</div>
 				</div>
 				<div class="dynamic_content">
+				<?php echo $dynamic['description']?>
 					<p class="dy_vedio_describe">
-					   <?php echo $dynamic['description']?>
+					   
 				    </p>
 				</div>
 				<div class="more_recommend">

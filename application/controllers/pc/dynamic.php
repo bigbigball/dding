@@ -76,8 +76,9 @@ class Dynamic extends CI_Controller {
 	
 	    if ($device == 'pc') {
 	        $v=$dy;
-	        //p($v['video']);die;
-	        if(!empty($v['video'])){
+	        //p(!empty($v['video']));die;
+	        if($v['video']==null){
+	            
 	            $this->load->view('pc/dynamicDetail', $output);
 	        }else{
 	            $this->load->view('pc/dynamicDetail1', $output);
