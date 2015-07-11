@@ -48,7 +48,7 @@
 					<a href="<?php echo base_url()?>index.php/pc/opinion">观 点</a>
 				</li>
 				<li id="h_solutions" <?php if($haction == 'inside'){?>class="active"<?php }?> >
-					<a href="<?php echo base_url()?>index.php/pc/inside">丁盯inside</a>
+					<a href="<?php echo base_url()?>index.php/pc/inside">智能芯</a>
 				</li>
 				<li id="h_dding" <?php if($haction == 'dynamic'){?>class="active"<?php }?> >
 					<a href="<?php echo base_url()?>index.php/pc/dynamic">丁盯进行时</a>
