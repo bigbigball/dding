@@ -4,7 +4,7 @@
 			<div class="mpinfo">
 				<p>
 					<a href="<?php echo base_url() ?>pc/opinion">观点 </a> 
-					<span class="tarrow"></span> 丁盯门磁 <span class="tarrow"></span> 
+					 <span class="tarrow"></span><!--  丁盯门磁 <span class="tarrow"></span> -->
 					<span><?php if(isset($ownerinfo['user_name']) && !empty($ownerinfo['user_name'])) {echo $ownerinfo['user_name'];} else {echo $ownerinfo['mobile'];}?>的门磁观点</span>
 				</p>
 			</div>

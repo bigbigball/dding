@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
   <meta charset="UTF-8" />
-  <title>丁盯智能门磁 - 云丁网络技术（北京）有限公司</title>
+  <title><?php if(isset($ownerinfo['user_name']) && !empty($ownerinfo['user_name'])) {echo $ownerinfo['user_name'];} else {echo $ownerinfo['mobile'];}?>的门磁观点-丁盯官网</title>
   <?php require_once('topHeader.php') ?>
 </head>
 <body class="mobile">

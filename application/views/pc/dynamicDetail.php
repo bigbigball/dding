@@ -1,5 +1,5 @@
 <?php $this->load->view('pc/header.php');?>
-
+ <?php date_default_timezone_set("PRC"); ?>
 <div class="media_report">
 		<div class="container">
 			<div class="sidebar" id="sidebarFollow">
@@ -19,7 +19,7 @@
 					<span class="dy_date"><?php echo date('Y-m-d', $dynamic['ctime'])?></span>
 				</div>
 				<div class="dynamic_content">
-					<img src="<?php echo 'http://yundinghomebackendtest.dding.net/uploads/dynamic/'.$dynamic['thumb'] ?>" class="detail" width="790px" height="170px">
+					<img src="<?php echo '/admin/uploads/dynamic/'.$dynamic['thumb'] ?>" class="detail" width="790px" height="170px">
 				</div>
 				<div class="dynamic_content">
 					<?php echo $dynamic['description']?>
@@ -39,6 +39,7 @@
 					</p>
 					<?php }?>
 				</div>
+				<!-- 
 				<div class="more_recommend">
 					<p class="title">更多推荐</p>
 					<ul>
@@ -81,6 +82,7 @@
 					</ul>
 					<div style="clear:both;"></div>
 				</div>
+				 -->
 			</div>
 		</div>
 	</div>

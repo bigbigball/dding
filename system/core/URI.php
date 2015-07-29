@@ -95,6 +95,7 @@ class CI_URI {
 			}
 
 			// Let's try the REQUEST_URI first, this will work in most situations
+			
 			if ($uri = $this->_detect_uri())
 			{
 				$this->_set_uri_string($uri);

@@ -3,7 +3,7 @@
 <html lang="zh-cn">
 <head>
   <meta charset="UTF-8" />
-  <title>APP下载 - 云丁网络技术（北京）有限公司</title>
+  <title>APP下载-丁盯官网</title>
   <?php require_once('topHeader.php') ?>
 </head>
 <body class="mobile" data-menu="5">
@@ -23,7 +23,7 @@
   <script>
   jQuery('input').click(function(){
   	if(navigator.userAgent.indexOf('Mac')>1) location.href = "https://itunes.apple.com/cn/app/ding-ding-zhi-neng/id918361877?mt=8&uo=4";
-  	else location.href = "http://bcs.duapp.com/android-release/yunding/dingding_yunding.apk";
+  	else location.href = "http://dd-release.bj.bcebos.com/android/dingding_yunding.apk";
   });
   </script>
 </body>

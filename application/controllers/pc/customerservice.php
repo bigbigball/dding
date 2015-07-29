@@ -14,7 +14,7 @@ class Customerservice extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'home','titles'=>'售后流程-丁盯智能官网');
+        $variable = array('haction'=>'home','titles'=>'售后流程-丁盯官网');
         $ci->load->vars($variable);
     }
 	public function index()

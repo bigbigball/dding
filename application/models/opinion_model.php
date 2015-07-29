@@ -62,7 +62,7 @@ class Opinion_model extends CI_Model
 	    $this->db->from('news');
 	     
 	    $this->db->order_by('id', 'asc');
-	    $this->db->limit(4);
+	    $this->db->limit(6);
 	    $query = $this->db->get();
 	    return $query->result_array();
 	}

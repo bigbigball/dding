@@ -7,7 +7,7 @@ body{
 	<div class="inpages">
 		<div class="container">
 			<div class="location">
-				<span>售后流程</span>
+				<span>门磁售后流程</span>
 			</div>
 		</div>
 		<div class="container">
@@ -42,7 +42,7 @@ body{
             	<ul class="con_info">
             		<li>收件人：云丁网络</li>
             		<li>联系电话：18628200427</li>
-            		<li>邮寄地址：北京市海淀区西二旗西路领袖新硅谷C区21号楼1201</li>
+            		<li>邮寄地址：北京市海淀区西二旗西路领袖新硅谷D区42-104</li>
             	</ul>
             </li>
           </ul>

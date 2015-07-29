@@ -10,6 +10,18 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
   <link rel="stylesheet" href="<?php echo base_url().'style/pc/' ?>css/style.css" charset="utf-8" />
+  
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9d8d43d99ad1e48c0faa87b90acfc184";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  
+  
 </head>
 <body>
 	<div class="header">
@@ -50,9 +62,7 @@
 				<li id="h_solutions" <?php if($haction == 'inside'){?>class="active"<?php }?> >
 					<a href="<?php echo base_url()?>index.php/pc/inside">智能芯</a>
 				</li>
-				<li id="h_dding" <?php if($haction == 'dynamic'){?>class="active"<?php }?> >
-					<a href="<?php echo base_url()?>index.php/pc/dynamic">丁盯进行时</a>
-				</li>
+				
 				<li id="download">
 					<a>APP下载</a>
 				</li>

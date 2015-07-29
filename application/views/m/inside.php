@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
   <meta charset="UTF-8" />
-  <title>丁盯智能门锁 - 云丁网络技术（北京）有限公司</title>
+  <title>智能芯-丁盯官网</title>
   <?php require_once('topHeader.php') ?>
 </head>
 <body class="mobile" data-menu="3">

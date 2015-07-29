@@ -2,17 +2,19 @@
 <html lang="zh-cn">
 <head>
   <meta charset="UTF-8" />
-  <title>丁盯智能门磁 - 云丁网络技术（北京）有限公司</title>
+  <title>门磁观点-丁盯官网</title>
   <?php require_once('topHeader.php') ?>
 </head>
 <body class="mobile" data-menu="2">
   <?php require_once('header.php') ?>
   <div class="container">
+  <!-- 
     <ul class="otab">
       <li>密码锁</li>
       <li>指纹码锁</li>
       <li class="active">门磁</li>
     </ul>
+     -->
     <div class="points content ">
       <div class="title">
         <h4>产品观点</h4>

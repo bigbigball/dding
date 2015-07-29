@@ -17,7 +17,7 @@ class Opinion extends CI_Controller {
         $this->load->library('detect');
         
         $ci = & get_instance();
-        $variable = array('haction'=>'opinion','titles'=>'观点-丁盯智能官网');
+        $variable = array('haction'=>'opinion','titles'=>'门磁观点-丁盯官网');
         $ci->load->vars($variable);
     }
     
@@ -48,7 +48,7 @@ class Opinion extends CI_Controller {
 	    $output['news'] = $news;
 	    $output['info'] = $info;
 	    $output['allopinion'] = $allopinion;
-	    $output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '/pc/opinion';
+	    $output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] ;
 	    $output['page'] = $page;
 	    //$this->load->view('opinions', $output);
 	    

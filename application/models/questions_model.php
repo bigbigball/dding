@@ -32,4 +32,14 @@ class Questions_model extends CI_Model
 		$query = $this->db->get();
 		return $query->result_array();
 	}
+	
+	public function get_allques1()
+	{
+		$this->db->select('*');
+		$this->db->from('questions');
+		$this->db->where('type', 1);
+		
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 }

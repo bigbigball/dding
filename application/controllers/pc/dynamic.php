@@ -16,7 +16,7 @@ class Dynamic extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'dynamic','titles'=>'丁盯动态-丁盯智能官网');
+        $variable = array('haction'=>'dynamic','titles'=>'丁盯动态-丁盯官网');
         $ci->load->vars($variable);
     }
     
@@ -37,7 +37,7 @@ class Dynamic extends CI_Controller {
 	
 		$output['alldynamic'] = $alldynamic;
 		//p($output);die;
-		$output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '/pc/dynamic';
+		$output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 		$output['page'] = $page;
 		
 		//分页结束

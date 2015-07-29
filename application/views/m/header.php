@@ -26,7 +26,7 @@
         <span class="line"></span>
         <span class="line"></span>
       </div>
-      <div class="logo">
+      <div class="logo" >
         <a href="/"><img src="<?php echo base_url()?>static/mobile/images/logoTop.png" /></a>
       </div>
       <div class="avatar">

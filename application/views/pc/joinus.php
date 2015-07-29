@@ -14,7 +14,7 @@
 			</div>
 			<div class="media_content">
 				<div class="location">
-					<span style="font-weight: bold;">加入我们</span>
+					<span>加入我们</span>
 				</div>
 				<div class="dding_life">
 					<p class="title">丁盯生活</p>
@@ -22,19 +22,44 @@
 						<li class="dy_arr">
 							<a class="arrl_btn"></a>
 						</li>
-						<li>
+						<li class="js-img" data-index="1">
 							<div>
-								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/joinus_1.jpg" width="240px" height="160px" /></a>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/01.jpg"/></a>
 							</div>
 						</li>
-						<li>
+						<li class="js-img" data-index="2">
 							<div>
-								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/joinus_2.jpg" width="240px" height="160px" /></a>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/02.jpg"/></a>
 							</div>
 						</li>
-						<li>
+						<li class="js-img" data-index="3">
 							<div>
-								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/joinus_1.jpg" width="240px" height="160px" /></a>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/03.jpg"/></a>
+							</div>
+						</li>
+						<li class="" data-index="4" style="display:none;">
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/04.jpg"/></a>
+							</div>
+						</li>
+						<li class="" data-index="5" style="display:none;">
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/05.jpg"/></a>
+							</div>
+						</li>
+						<li class="" data-index="6" style="display:none;">
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/06.jpg"/></a>
+							</div>
+						</li>
+						<li class="" data-index="7" style="display:none;">
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/07.jpg"/></a>
+							</div>
+						</li>
+						<li class="" data-index="8" style="display:none;">
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/08.jpg"/></a>
 							</div>
 						</li>
 						<li class="dy_arr">
@@ -75,7 +100,7 @@
 						</p>
 	              	<?php endforeach; ?>
 	            </div>
-	            <?php if($count > 5)include('page_jobs.php');?>
+	            
 			</div>
 		</div>
 	</div>

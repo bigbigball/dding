@@ -16,7 +16,7 @@ class Questions extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'home','titles'=>'常见问题-丁盯智能官网');
+        $variable = array('haction'=>'home','titles'=>'常见问题-丁盯官网');
         $ci->load->vars($variable);
     }
 	public function index()
@@ -30,6 +30,7 @@ class Questions extends CI_Controller {
 		$page = empty($page)? 1 : $page;
 		
 		$allques = $this->que->get_allques($page);
+		$allques1 = $this->que->get_allques1();
 			
 		$ret = $this->que->get_count();
 		$output['count'] = isset($ret['num']) ? $ret['num'] : 0;
@@ -44,8 +45,9 @@ class Questions extends CI_Controller {
 		}
 		
 		$output['allques'] = $allques;
+		$output['allques1'] = $allques1;
 		//p($output);die;
-		$output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '/pc/questions';
+		$output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] ;
 		$output['page'] = $page;
 		
 		//分页结束

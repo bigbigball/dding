@@ -14,7 +14,7 @@ class Lock extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'lock','titles'=>'门锁-丁盯智能官网');
+        $variable = array('haction'=>'lock','titles'=>'安全门锁-丁盯官网');
         $ci->load->vars($variable);
     }
     
@@ -29,7 +29,8 @@ class Lock extends CI_Controller {
 		
 		if ($device == 'pc') {
 		    //$this->load->view('pc/newproduct', $output);
-		    $this->load->view('pc/codedlock', $output);
+		    //$this->load->view('pc/codedlock', $output);
+		    $this->load->view('pc/codedlock1', $output);
 		} else {
 		    $this->load->view('m/codedlock', $output);
 		}

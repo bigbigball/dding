@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "pc/home/index";
+$route['default_controller'] = "pc/lock";
 $route['404_override'] = '';
 
 

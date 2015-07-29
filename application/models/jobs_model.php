@@ -29,7 +29,7 @@ class Jobs_model extends CI_Model
 		$this->db->from('jobs');
 		
 		$this->db->order_by('rank', 'asc');
-		$this->db->limit(6, ($page - 1) * 6);
+		$this->db->limit(8, ($page - 1) * 8);
 		$query = $this->db->get();
 		return $query->result_array();
 	}

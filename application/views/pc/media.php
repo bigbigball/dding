@@ -15,14 +15,14 @@
 			</div>
 			<div class="media_content">
 				<div class="location">
-					<span style="font-weight: bold;">媒体报道</span>
+					<span>媒体报道</span>
 				</div>
 				<div>
 					<ul class="listitem">
 					  <?php foreach ($allmedia as $v): ?>
 	          			<li>
 					  		<div class="left_img">
-								<img src="<?php echo 'http://yundinghomebackendtest.dding.net/uploads/news/'.$v['thumb'] ?>" width="280px" height="190px">
+								<img src="<?php echo '/admin/uploads/news/'.$v['thumb'] ?>" width="280px" height="190px">
 							</div>
 							<div class="right_content">
 								<p class="title">
@@ -32,7 +32,7 @@
 								   <?php echo $v['abstract']?>
 								</p>
 								<p class="newspaper">
-									<span><?php echo $v['source']?>&nbsp;&nbsp;<?php echo date('Y-m-d', $v['ctime'])?></span> <a href="<?php echo $v['links']?>" target="_blank">了解更多&gt; &gt;</a>
+									<span><?php echo $v['source']?>&nbsp;&nbsp;</span> <a href="<?php echo $v['links']?>" target="_blank">了解更多&gt; &gt;</a>
 								</p>
 							</div>
 		        		</li>

@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://www.dding.net/';
 
 /*
 |--------------------------------------------------------------------------
@@ -45,7 +45,7 @@ $config['index_page'] = 'index.php';
 |
 */
 $config['uri_protocol']	= 'AUTO';
-
+//$config['uri_protocol'] = 'REQUEST_URI';
 /*
 |--------------------------------------------------------------------------
 | URL suffix

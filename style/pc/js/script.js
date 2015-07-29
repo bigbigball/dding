@@ -421,6 +421,34 @@ $(document).ready(function () {
 // 	font();
 // }
 
+  $(".arrr_btn").click(function(e){
+	    var imglist = $(".js-img");
+	    var num = imglist.length;
+	    if($(imglist[num-1]).next().hasClass("dy_arr")){//最后一张图片
+	      return;
+	    }
+	    var $first = $(imglist[0]);
+	    var $last = $(imglist[num-1]).next();
+	    // $first.removeClass("js-img").fadeOut("slow",function(){
+	    //   $last.addClass("js-img").fadeIn("slow");
+	    // });
+	    $first.removeClass("js-img").hide();
+	    $last.addClass("js-img").show();
+	    
+	  });
+
+	  $(".arrl_btn").click(function(e){
+	    var imglist = $(".js-img");
+	    var num = imglist.length;
+	    if($(imglist[0]).prev().hasClass("dy_arr")){//第一张图片
+	      return;
+	    }
+	    var $first = $(imglist[0]).prev();
+	    var $last = $(imglist[num-1]);
+	    $last.removeClass("js-img").hide();
+	    $first.addClass("js-img").show();
+	  });
+  
   function font(){ 
    if (screen.width <1280) 
        document.styleSheets[0].addRule("body","font-size:0.75em;"); 

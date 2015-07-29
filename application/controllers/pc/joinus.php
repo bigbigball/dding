@@ -16,7 +16,7 @@ class Joinus extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'dynamic','titles'=>'加入我们-丁盯智能官网');
+        $variable = array('haction'=>'dynamic','titles'=>'加入我们-丁盯官网');
         $ci->load->vars($variable);
     }
     public function index()
@@ -45,7 +45,7 @@ class Joinus extends CI_Controller {
 		
 		$output['alljobs'] = $alljobs;
 		//p($output);die;
-		$output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '/pc/joinus';
+		$output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 		$output['page'] = $page;
 		
 		//分页结束

@@ -15,7 +15,7 @@
 			</div>
 			<div class="media_content">
 				<div class="location">
-					<span style="font-weight: bold;">丁盯团队</span>
+					<span>丁盯团队</span>
 				</div>
 				<div class="team_content">
 					<p class="title">公司简介</p>
@@ -27,7 +27,7 @@
 				</div>
 				<div class="team_js">
 					<p class="title">丁盯大记事</p>
-					<ul class="timeline">
+					<!-- <ul class="timeline">
 						<div>
 							<li>
 								<span>6月</span>
@@ -39,10 +39,6 @@
 							</li>
 							<li>
 								<p class="nospan"><span>丁盯与云安全领导厂商百度安全达成战略合作</span></p>
-							</li>
-							<li>
-								<span>4月</span>
-								<p><span>两会期间，丁盯CEO陈彬作为创业代表接受新华社采访，在“两会新华深度”专题中被报道</span></p>
 							</li>
 							<li>
 								<span>3月</span>
@@ -87,27 +83,52 @@
 							</li>
 						</div>
 					</ul>
-					<div style="clear:both;"></div>
+					<div style="clear:both;"></div> -->
+					<img src="<?php echo base_url().'style/pc/' ?>images/dding_history2.jpg" width="">
 				</div>
 				<div class="team_content">
 					<p class="title">合作伙伴</p>
 					<ul>
 						<li>
 							<div>
-								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/baidu.jpg"/></a>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/1.png"/></a>
 							</div>
 						</li>
 						<li>
 							<div>
-								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/baidu.jpg"/></a>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/2.png"/></a>
 							</div>
 						</li>
 						<li>
 							<div>
-								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/leshi.jpg"/></a>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/3.png"/></a>
 							</div>
 						</li>
-						
+						<li>
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/4.png"/></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/5.png"/></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/6.png"/></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/7.png"/></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href=""><img src="<?php echo base_url().'style/pc/' ?>images/8.png"/></a>
+							</div>
+						</li>
 					</ul>
 					<div style="clear:both;"></div>
 				</div>

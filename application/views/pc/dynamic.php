@@ -15,7 +15,7 @@
 			</div>
 			<div class="media_content">
 				<div class="location">
-					<span style="font-weight: bold;">丁盯动态</span>
+					<span>丁盯动态</span>
 				</div>
 				<div>
 					<ul class="listitem dynamic_content">
@@ -27,7 +27,7 @@
 								    <?php echo $v['title']?>
 								  </a>
 								</p>
-								<a href="<?php echo base_url()?>index.php/pc/dynamic/dynamicDetail?id=<?php if(isset($v['id'])) echo $v['id'];?>"><img src="<?php echo 'http://yundinghomebackendtest.dding.net/uploads/dynamic/'.$v['thumb'] ?>"></a>
+								<a href="<?php echo base_url()?>index.php/pc/dynamic/dynamicDetail?id=<?php if(isset($v['id'])) echo $v['id'];?>"><img src="<?php echo '/admin/uploads/dynamic/'.$v['thumb'] ?>"></a>
 							</div>
 						</li>
 					  <?php endforeach; ?>	

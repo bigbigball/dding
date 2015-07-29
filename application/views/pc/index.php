@@ -18,6 +18,7 @@
 						PASSWORD<span></p>
 					<p class="use">房东必备</p>
 				</div> -->
+				<a href="<?php echo base_url()?>index.php/pc/lock">
 				<img src="<?php echo base_url().'style/pc/' ?>images/password_bg.png" />
 				<div class="img img1 t2s" id="product1"></div>
 				<!-- <a class="img1 t2s" id="product1"> -->
@@ -29,8 +30,10 @@
 						MAGNETIC<span></p>
 					<p class="use">贴心卫士</p>
 				</div> -->
+				<a href="<?php echo base_url()?>index.php/pc/magnetic">
 				<img src="<?php echo base_url().'style/pc/' ?>images/magnetic_bg.png" />
 				<div class="img img2 t2s" id="product2"></div>
+				</a>
 			</div>
 			<div class="pro_ad">
 				<!-- <div class="name">

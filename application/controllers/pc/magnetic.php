@@ -14,7 +14,7 @@ class Magnetic extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'magnetic','titles'=>'门磁-丁盯智能官网');
+        $variable = array('haction'=>'magnetic','titles'=>'智能门磁-丁盯官网');
         $ci->load->vars($variable);
     }
     

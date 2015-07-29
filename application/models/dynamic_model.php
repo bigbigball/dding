@@ -28,7 +28,7 @@ class Dynamic_model extends CI_Model
 		$this->db->select('*');
 		$this->db->from('dynamic');
 		//$this->db->where('type', 0);
-		$this->db->order_by('rank', 'desc');
+		$this->db->order_by('rank', 'asc');
 		$this->db->limit(4, ($page - 1) * 4);
 		$query = $this->db->get();
 		return $query->result_array();

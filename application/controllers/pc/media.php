@@ -16,7 +16,7 @@ class Media extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'dynamic','titles'=>'媒体报道-丁盯智能官网');
+        $variable = array('haction'=>'dynamic','titles'=>'媒体报道-丁盯官网');
         $ci->load->vars($variable);
     }
     
@@ -38,7 +38,7 @@ class Media extends CI_Controller {
 	
 		$output['allmedia'] = $allmedia;
 		//p($output);die;
-		$output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '/pc/media';
+		$output['path'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] ;
 		$output['page'] = $page;
 		
 		//分页结束

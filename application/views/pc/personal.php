@@ -45,9 +45,9 @@
 							<?php } else {?>
 							<div class="bgimg p3">
 								<div class="ab">
-									<a class="bgclick" href="http://yundinghometest.dding.net/index.php/pc/lock"></a>
+									<a class="bgclick" href="<?php echo base_url()?>index.php/pc/lock"></a>
 									<p>
-										<a href="http://yundinghometest.dding.net/index.php/pc/lock">了解产品></a>
+										<a href="<?php echo base_url()?>index.php/pc/lock">了解产品></a>
 									</p>
 									<p>
 										<span>此设备尚未购买或未被绑定</span>
@@ -55,7 +55,7 @@
 								</div>
 							</div>
 							<?php }?>
-							<p class="title">丁盯指纹锁</p>
+							<p class="title">丁盯安全门锁</p>
 						</li>
 						<li>
 							<div class="bgimg p2">
@@ -109,17 +109,17 @@
 							<?php }else {?>
 							<div class="bgimg p3">
 								<div class="ab">
-									<a class="bgclick" href="http://yundinghometest.dding.net/index.php/pc/lock"></a>
+									<a class="bgclick" href=""></a>
 									<p>
-										<a href="http://yundinghometest.dding.net/index.php/pc/lock">了解产品></a>
+										<a href="">更多产品></a>
 									</p>
 									<p>
-										<span>此设备尚未购买或未被绑定</span>
+										<span>敬请期待</span>
 									</p>
 								</div>
 							</div>
 							<?php }?>
-							<p class="title">丁盯密码锁</p>
+							<p class="title">其他</p>
 						</li>
 					</ul>
 				</div>

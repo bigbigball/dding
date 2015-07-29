@@ -1,0 +1,33 @@
+body,div,span,object,frame,h1,h2,h3,h4,h5,h6,p,blockquote,a,code,em,img,q,small,strong,dd,dl,dt,li,ol,ul,fieldset,form,label,tbody,tr,th,td,input{margin:0;padding:0}
+
+body{font-size:12px;font-family:Tahoma,Verdana,sans-serif, simsun;background-color: #EEF2FB;}
+#ysqyjbxx_tab tr{
+	line-height: 35px;
+}
+#ysqyjbxx_tab,#ysqyjbxx_tab td,#ysqyjbxx_tab th{
+	border: 1px solid #B5D0D9;
+	border-collapse:collapse;
+}
+#ysqyjbxx_tab td{
+	text-align: left;
+	padding-left: 10px;
+}
+#ysqyjbxx_tab th{
+	text-align: center;
+}
+#ysqyjbxx_tab input{
+	width: 70%;
+}
+#ysqyjbxx_tab .rs input{
+	width:30px;
+}
+#tscbqy_tab tr{
+	height: 35px;
+}
+#tscbqy_tab,#tscbqy_tab td,#tscbqy_tab th{
+	border: 1px solid #B5D0D9;
+	border-collapse: collapse;
+}
+#tscbqy_tab .dzclass input{
+	width:80px;
+}

@@ -1,5 +1,5 @@
 <?php $this->load->view('pc/header.php');?>
-
+ <?php date_default_timezone_set("PRC"); ?>
 <div class="media_report">
 		<div class="container">
 			<div class="sidebar" id="sidebarFollow">
@@ -38,6 +38,7 @@
 					   
 				    </p>
 				</div>
+				<!--  
 				<div class="more_recommend">
 					<p class="title">更多推荐</p>
 					<ul>
@@ -80,6 +81,7 @@
 					</ul>
 					<div style="clear:both;"></div>
 				</div>
+				-->
 			</div>
 		</div>
 	</div>

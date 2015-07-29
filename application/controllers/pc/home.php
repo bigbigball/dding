@@ -29,7 +29,7 @@ class Home extends CI_Controller {
 		if ($device == 'pc') {
 		    $this->load->view('pc/index', $output);
 		} else {
-		    $this->load->view('m/magnetic', $output);
+		    $this->load->view('m/codedlock', $output);
 		}
 
 	}

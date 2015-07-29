@@ -13,8 +13,8 @@
 			<div class="que_bar">
 				<ul class="probar">
 					<li class="active" id="magnetic"><a>智能门磁</a></li>
-					<li class="mid_bar" id="pwdClock"><a>智能密码锁</a></li>
-					<li id="fingerprint"><a>智能指纹锁</a></li>
+					<li class="mid_bar" id="pwdClock"><a>安全门锁</a></li>
+					<!--  <li id="fingerprint"><a>智能指纹锁</a></li>-->
 				</ul>
 			</div>
 			<div class="ques_ans">
@@ -29,35 +29,14 @@
 				</ul>
 				
 				<ul class="listitem" id="pwdClock_content" style="display: none;">
+					<?php foreach ($allques1 as $v): ?>
 					<li>
-						<p class="question">产品支持那些移动客户端？</p>
-						<p>答：APP支持Android、IOS，电话通知所有手机。</p>
+						<p class="question"><?php echo $v['question']?></p>
+						<p><?php echo $v['answer']?></p>
 					</li>
-					<li>
-						<p class="question">产品支持那些移动客户端？</p>
-						<p>答：APP支持Android、IOS，电话通知所有手机。</p>
-					</li>
-					<li>
-						<p class="question">产品支持那些移动客户端？</p>
-						<p>答：APP支持Android、IOS，电话通知所有手机。</p>
-					</li>
-					<li>
-						<p class="question">产品支持那些移动客户端？</p>
-						<p>答：APP支持Android、IOS，电话通知所有手机。</p>
-					</li>
-					<li>
-						<p class="question">产品支持那些移动客户端？</p>
-						<p>答：APP支持Android、IOS，电话通知所有手机。</p>
-					</li>
-					<li>
-						<p class="question">产品支持那些移动客户端？</p>
-						<p>答：APP支持Android、IOS，电话通知所有手机。</p>
-					</li>
-					<li>
-						<p class="question">产品支持那些移动客户端？</p>
-						<p>答：APP支持Android、IOS，电话通知所有手机。</p>
-					</li>
+				  <?php endforeach; ?>
 				</ul>
+				<!--  
 				<ul class="listitem" id="fingerprint_content" style="display: none;">
 					<li>
 						<p class="question">产品支持那些移动客户端？</p>
@@ -88,6 +67,7 @@
 						<p>答：APP支持Android、IOS，电话通知所有手机。</p>
 					</li>
 				</ul>
+				-->
 			</div>
 			<?php if($count > 5)include('page_questions.php');?>
 		</div>

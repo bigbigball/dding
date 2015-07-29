@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
   <meta charset="UTF-8" />
-  <title>丁盯智能门磁 - 云丁网络技术（北京）有限公司</title>
+  <title>个人中心-丁盯官网</title>
   <?php require_once('topHeader.php') ?>
 </head>
 <body class="mobile">
@@ -21,6 +21,7 @@
       <div class="show">
         <p>发表你对产品的观点吧，下一位意见领袖就是你！</p>
         <ul class="prolist">
+        <!-- 
           <li>
             <div class="p1">
               <p class="ab">
@@ -30,6 +31,7 @@
             </div>
             <h3>丁盯指纹锁</h3>
           </li>
+           -->
           <li>
             <div class="p2">
               <p class="ab">
@@ -51,7 +53,7 @@
                 <span>此设备尚未购买或未被绑定</span>
               </p>
             </div>
-            <h3>丁盯密码锁</h3>
+            <h3>丁盯安全门锁</h3>
           </li>
         </ul>
       </div>

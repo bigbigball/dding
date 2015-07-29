@@ -15,7 +15,7 @@ class Team extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'dynamic','titles'=>'丁盯团队-丁盯智能官网');
+        $variable = array('haction'=>'dynamic','titles'=>'丁盯团队-丁盯官网');
         $ci->load->vars($variable);
     }
     

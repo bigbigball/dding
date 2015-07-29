@@ -213,7 +213,7 @@ textarea{
 .header .logo{
   position: absolute;
   /*width: 5%;*/
-  padding: 0.5em 0 0;
+  padding: 1em 0 0;
 }
 .header .logo img{
   width: 100%;
@@ -312,6 +312,8 @@ textarea{
   position: absolute;
   right: 25%;
   top: 0%;
+  width:180px;
+  height:180px;
 }
 .downloadContent .delpos{
   float: right;
@@ -1067,9 +1069,9 @@ a:active, a:visited {
 }
 
 .location span {
-  font-size: 1.875em;
+  font-size: 1.625em;
   color: #333333;
-  font-family: "STHeiti";
+  font-family: "Microsoft YaHei";
 }
 .search{
   float: right;
@@ -1148,7 +1150,7 @@ a:active, a:visited {
 
 .ques_ans {
   border-top: 1px solid #cccccc;
-  margin-bottom: 15%;
+  /*margin-bottom: 15%;*/
 }
 
 .ques_ans .listitem {
@@ -2522,7 +2524,7 @@ h5{
   padding-left: 1em;
 }
 .side .box{
-  padding: 2.5em 1em;
+  padding: 1em 1em;
 }
 .side .box h3,
 .side .box p{
@@ -2642,9 +2644,14 @@ h5{
   background-color: #FFFFFF;
 }
 
-.media_report .location{
+.media_report .location {
   padding: 84px 0 15px;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
+  border-color: #999999;
+}
+
+.media_report .pagebar {
+  margin: 4% 0;
 }
 
 .media_content{
@@ -2665,7 +2672,7 @@ h5{
 }
 
 .media_content .listitem a{
-  color:#000000;
+  color:#333333;
 }
 
 .media_content .listitem a:hover{
@@ -2875,7 +2882,7 @@ h5{
 }
 
 .dy_join{
-  padding:6% 0 12%;
+  /*padding:6% 0 12%;*/
 }
 
 .dynamic_content p.join-icon{
@@ -2924,12 +2931,12 @@ h5{
 }
 
 .dynamic_content img{
-  width: 100%;
-  height: 10.625em;
+  /*width: 100%;
+  height: 10.625em;*/
 }
 
 .dynamic_content img.detail{
-  width: 100%;
+  /*width: 100%;*/
   /*height: 15.375em;*/
   margin:3% 0;
 }
@@ -3020,7 +3027,7 @@ h5{
 }
 
 .job_position{
-  margin-bottom: 5%;
+  margin-bottom: 30px;
 }
 
 .job_position p{
@@ -3045,13 +3052,12 @@ h5{
 .team_content p{
   line-height: 1.5em;
   font-size: 1em;
-  color: #999999;
+  color: #333333;
 }
 
 .team_content p.title{
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: bold;
-  color:#000000;
 }
 
 .team_content ul li{
@@ -3068,30 +3074,30 @@ h5{
   padding-top: 3%;
 }
 
-.team_js p.title{
-  padding-top: 3%;
-  font-size: 1.5em;
+.team_js p.title {
+  font-size: 1.25em;
   font-weight: bold;
-  color:#000000;
+  color: #333333;
+  padding-bottom: 2%;
 }
 
 .timeline{
   width: 100%;
-  float: right;
-  background: url('../images/timeline_1.png') 60px repeat-y;
-  margin: 20px 0;
+  float: left;
+  background: url('../images/timeline_1.png') 7.7% repeat-y;
+  margin: 1.25em 0;
 }
 
 .timeline p{
   font-size: 1em;
-  color: #999999;
+  color: #333333;
 }
 
 .timeline h3 {
-  margin-left: 49px;
-  font-size: 20px;
+  margin-left: 6.2%;
+  font-size: 1.25em;
   background: url('../images/disc_icon2.png') 0 no-repeat;
-  height: 46px;
+  height: 2.875em;
 }
 
 .timeline li {
@@ -3103,31 +3109,65 @@ h5{
   text-align: right;
   display: block;
   float: left;
-  margin-top: 10px;
-  font-weight: bold;
+  margin-top: 0.625em;
 }
 
 .timeline li span.year {
-  margin-top: 15px;
+  margin-top: 1em;
   font-size: 1.25em;
 }
 
 .timeline li p {
-  width: 90%;
-  margin-left: 0.9%;
+  width: 93%;
+  margin-left: 1%;
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 0.625em;
   background: url('../images/disc_icon.png') 0 no-repeat;
   line-height: 1em;
 }
 
 .timeline li p.nospan{
-  margin-left: 55px;
+  margin-left: 7%;
 }
 
 .timeline li p span {
   width: 100%;
   text-align: left;
-  padding: 10px 15px;
+  padding: 0.625em 1em;
   margin: 0;
+}
+
+/*申请试用*/
+.sqsy{
+  border: none;
+  background: #13eaa4;
+  color: #050505;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  display: block;
+  top: 7%;
+  left: 28%;
+  padding: 1% 5%;
+}
+
+.sqsy:hover{
+  background: #04DC96;
+  cursor: pointer;
+}
+.sqsy .tri_pos {
+  right: 24%;
+  bottom: 40%;
 }
