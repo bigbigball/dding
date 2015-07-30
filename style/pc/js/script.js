@@ -3,18 +3,15 @@ $(document).ready(function () {
 	// 用CSS3实现hover时的放大效果
 	
 	//下载
-	$("#download").on("click",function(e){
-		$(this).addClass("active");
-		var topOffset = $(e.currentTarget).css("height");
-		$(".downloadContent").css({
-			top:topOffset
-		});
-		$(".downloadContent").show();
-	});
-	$(".downloadContent .delpos").on("click",function() {
-		$(".downloadContent").hide();
-		$("#download").removeClass("active");
-	});
+    $('#downloadBtn').click(function() {
+        $(this).toggleClass('active');
+        $('#downloadArea').slideToggle();
+    });
+
+    $('#closeDlBtn').click(function() {
+        $('#downloadBtn').toggleClass('active');
+        $('#downloadArea').slideToggle();
+    });
 /*
 	//产品链接
 	$("#product3").on("click",function() {

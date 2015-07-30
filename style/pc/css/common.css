@@ -1,0 +1,300 @@
+/**
+ * 自定义公共样式
+ */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'fzltcxhjt';
+    src: url('../fonts/fzltcxhjt.eot');
+
+    src: url('../fonts/fzltcxhjt.eot?#font-spider') format('embedded-opentype'),
+        url('../fonts/fzltcxhjt.woff') format('woff'),
+        url('../fonts/fzltcxhjt.ttf') format('truetype'),
+        url('../fonts/fzltcxhjt.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'fzltxhk';
+    src: url('../fonts/fzltxhk.eot');
+
+    src: url('../fonts/fzltxhk.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/fzltxhk.woff') format('woff'),
+    url('../fonts/fzltxhk.ttf') format('truetype'),
+    url('../fonts/fzltxhk.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'fzlthk';
+    src: url('../fonts/fzlthk.eot');
+
+    src: url('../fonts/fzlthk.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/fzlthk.woff') format('woff'),
+    url('../fonts/fzlthk.ttf') format('truetype'),
+    url('../fonts/fzlthk.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'mnjtxdx';
+    src: url('../fonts/mnjtxdx.eot');
+
+    src: url('../fonts/mnjtxdx.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/mnjtxdx.woff') format('woff'),
+    url('../fonts/mnjtxdx.ttf') format('truetype'),
+    url('../fonts/mnjtxdx.svg') format('svg');
+}
+
+
+body{
+    font-family: "Helvetica Neue", Helveticax, Arial, "Microsoft YaHei", sans-serif;
+}
+.container{
+    width: 930px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.sub-nav > li:first-child{
+    margin-left: 70px;
+}
+
+@media (min-width: 1280px) {
+    .container{
+        width: 1170px;
+    }
+    .sub-nav > li:first-child{
+        margin-left: 190px;
+    }
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+     overflow: hidden;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    z-index: 200;
+}
+.header-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+.header > .container{
+    position: relative;
+}
+
+.logo{
+    float: left;
+    padding: 15px 0;
+}
+.logo > img{
+    display: block;
+}
+.login-bar{
+    float: right;
+    font-size: 12px;
+    margin-left: 27px;
+}
+.login-bar > a,
+.login-bar > span{
+    display: inline-block;
+    padding: 15px 0;
+}
+.nav-bar{
+    float: right;
+     overflow: hidden;
+    list-style: none;
+}
+.nav-bar > li{
+    float: left;
+    position: relative;
+}
+.nav-bar > li:hover > .sub-nav{
+    display: block;
+}
+.nav-bar > li > a{
+    display: inline-block;
+    padding: 15px 27px;
+}
+
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+.header a:hover,
+.header a:active,
+.header a.active{
+    color: #999;
+}
+
+.footer{
+    background-color: #f6f6f6;
+}
+
+.footer-info{
+    overflow: visible;
+    padding: 45px 0 20px;
+}
+
+.menu-list{
+    list-style: none;
+    float: left;
+}
+.menu-list > li{
+    float: left;
+    margin-left: 100px;
+}
+.menu-list > li:first-child{
+    margin-left: 0;
+}
+.menu-tit{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.sub-menu-list{
+    list-style: none;
+}
+.sub-menu-list > li > a{
+    text-decoration: none;
+    color: #878a8c;
+    font-size: 12px;
+    line-height: 30px;
+    display: block;
+}
+.sub-menu-list > li > a:hover{
+    color: #575a5c;
+}
+.wx-code{
+    display: none;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+}
+#weixin{
+    position: relative;
+}
+#weixin:hover > .wx-code{
+    display: block;
+}
+
+.contact{
+    float: right;
+    text-align: right;
+}
+.service{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.tel{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 5px;
+    color: #333;
+}
+.time{
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+}
+
+.footer-icp{
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 18px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+.clear{
+    clear: both;
+}
+
+.header-box{
+    height: 60px;
+}
+.sub-nav{
+    list-style: none;
+    overflow: hidden;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(0, 0, 0, .5);
+    background-color: #333 \9;
+    right: 0;
+    left: 0;
+    padding-left: 50%;
+    display: none;
+}
+
+
+
+.sub-nav > li{
+    float: left;
+    white-space:nowrap;
+}
+
+.sub-nav > li > a{
+    display: inline-block;
+    padding: 25px 27px;
+}
+
+.download-area{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    padding: 20px 0;
+    width: 100%;
+    opacity: .9;
+    z-index: 100;
+    background-color: #ececec;
+    color: #333;
+    display: none;
+}
+
+.download-area h3{
+    font-size: 48px;
+    padding: 4% 0;
+    margin: 0;
+    font-family: "STHeiti Light";
+}
+.notice{
+    font-size: 16px;
+    padding-bottom: 1%;
+}
+.more{
+    font-size: 14px;
+    margin-top: 2%;
+    color: #666;
+}
+.code{
+    position: absolute;
+    right: 25%;
+    top: 20px;
+    width: 180px;
+    height: 180px;
+}
+.close-btn{
+    position: absolute;
+    background: url(../images/del_download.png) center no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 0;
+}
+

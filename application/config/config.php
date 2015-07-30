@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.dding.net/';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------

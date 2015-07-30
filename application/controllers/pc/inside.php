@@ -14,7 +14,7 @@ class Inside extends CI_Controller {
         $this->load->library('detect');
 		
         $ci = & get_instance();
-        $variable = array('haction'=>'inside','titles'=>'智能芯-丁盯官网');
+        $variable = array('solution'=> true, 'haction'=>'inside','titles'=>'智能芯-丁盯官网');
         $ci->load->vars($variable);
     }
     
