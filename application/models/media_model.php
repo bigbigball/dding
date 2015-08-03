@@ -28,7 +28,7 @@ class Media_model extends CI_Model
 		$this->db->select('*');
 		$this->db->from('news');
 		//$this->db->where('type', 0);
-		$this->db->order_by('rank', 'asc');
+		$this->db->order_by('rank', 'desc');
 		$this->db->limit(4, ($page - 1) * 4);
 		$query = $this->db->get();
 		return $query->result_array();

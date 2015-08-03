@@ -6,7 +6,7 @@ class News_model extends CI_Model{
     //全部查询
 	public function newsList(){
 	    //添加查询条件，降序
-	    $this->db->order_by('rank','ASC');
+	    $this->db->order_by('rank','desc');
 		$data = $this->db->get('news')->result_array();
 		return $data;
 	}
