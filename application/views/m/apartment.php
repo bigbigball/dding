@@ -15,9 +15,7 @@
         <div class="closeBtn">
         </div>
         <ul class="menuNav">
-            <li>
-                <a href="<?php echo base_url() ?>" >首 页</a>
-            </li>
+            
             <li>
         <a href="<?php echo base_url() ?>pc/magnetic" >智能门磁</a>
       </li>

@@ -1,6 +1,6 @@
 <?php $this->load->view('pc/header.php');?>
 <style>
-body{background-color:#2E2E2E;}
+<!--body{background-color:#2E2E2E;}-->
 </style>
 	<div class="mc_content">
 		<div class="bg1">

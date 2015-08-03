@@ -14,9 +14,9 @@
 | path to your installation.
 |
 */
-$config['base_url']	= "http://www.dding.net/admin/";
+$config['base_url']	= "http://localhost/admin/";
 
-$config['front_url']	= "http://www.dding.net/";
+$config['front_url']	= "http://localhost/";
 
 /*
 |--------------------------------------------------------------------------
